@@ -29,11 +29,10 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Upload site artifacts
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
-          # point at the folder containing your .html, css/, photo/, etc.
-          path: . 
+          path: .   # your .html, css/, image/, etc.
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
